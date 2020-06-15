@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Here, all in one booking app">
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="src/images/favicon.png">
+        <!-- Aos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Fontawesome -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- Style -->
+        <link rel="stylesheet" href="src/css/styles.css">
+
+        <title>Trillo | Your all-in-one booking app</title>
+    </head>
+    <body>
+        <div class="container">
+          <header class="header">
+            <img src="src/images/logo.png" alt="trilloLogo" class="logo" title="trillo">
+            <form class="search" action="#" method="post" data-aos="fade-up" data-aos-duration="800">
+              <input type="text" name="searchInput" id="searchInput" class="search__input" placeholder="Search hotels" autocomplete="off">
+              <button class="search__button" type="submit">
+                <img src="src/images/svg/magnifying-glass.svg" alt="iconSearch" class="search__icon">
+                <!-- <svg class="search__icon">
+                  <use xlink:href="src/images/sprite.svg#icon-magnifying-glass"></use>
+                </svg> -->
+              </button>
+            </form>
+            <nav class="user-nav">
+              <div class="user-nav__icon-box" data-aos="fade-left" data-aos-duration="800">
+                <img src="src/images/svg/bookmark.svg" alt="navIcon" class="user-nav__icon">
+                <span class="user-nav__notification">6</span>
+                <!-- <svg class="user-nav__icon">
+                  <use xlink:href="src/images/sprite.svg#icon-bookmark"></use>
+                </svg> -->
+              </div>
+
+              <div class="user-nav__icon-box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                <img src="src/images/svg/chat.svg" alt="navIcon" class="user-nav__icon">
+                <span class="user-nav__notification">14</span>
+                <!-- <svg class="user-nav__icon">
+                  <use xlink:href="src/images/sprite.svg#icon-chat"></use>
+                </svg> -->
+              </div>
+
+              <div class="user-nav__user" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
+                <img src="src/images/user.jpg" alt="userPhoto" class="user-nav__user-photo">
+                <span class="user-nav__user-name">Usein</span>
+              </div>
+            </nav>
+          </header>
+
+          <div class="content">
+            <nav class="sidebar">
+              <ul class="side-nav">
+                <li class="side-nav__item side-nav__item--active">
+                  <a href="#" class="side-nav__link">
+                    <img src="src/images/svg/home.svg" alt="linkIcon" class="side-nav__icon">
+                    <span>Hotel</span>
+                  </a>
+                </li>
+                <li class="side-nav__item">
+                  <a href="#" class="side-nav__link">
+                    <img src="src/images/svg/aircraft-take-off.svg" alt="linkIcon" class="side-nav__icon">
+                    <span>Flight</span>
+                  </a>
+                </li>
+                <li class="side-nav__item">
+                  <a href="#" class="side-nav__link">
+                    <img src="src/images/svg/key.svg" alt="linkIcon" class="side-nav__icon">
+                    <span>Car Rental</span>
+                  </a>
+                </li>
+                <li class="side-nav__item">
+                  <a href="#" class="side-nav__link">
+                    <img src="src/images/svg/map.svg" alt="linkIcon" class="side-nav__icon">
+                    <span>Tours</span>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="legal">
+                &copy; 2020 by Trillo. All rights reserved.
+              </div>
+            </nav>
+
+            <main class="hotel-view">
+            <div class="gallery" data-aos="fade-up" data-aos-duration="800">
+              <figure class="gallery__item">
+                <div class="gallery__box">
+                  <div class="gallery__caption">
+                    <span class="gallery__hotel">
+                      <img src="src/images/svg/hotel.svg" alt="galleryIcon" class="gallery__icon-location">Hotel Luxury
+                    </span>
+                    <span class="gallery__location">
+                      <img src="src/images/svg/location-pin.svg" alt="galleryIcon" class="gallery__icon-location">Bristol, Great Britain
+                    </span>
+                  </div>
+                </div>
+                <picture>
+                  <source srcset="src/images/hotel-1-small.jpg" media="(max-width: 37.5em)">
+                  <img src="src/images/hotel-1.jpg" alt="photo of hotel 1" class="gallery__photo">
+                </picture>
+              </figure>
+
+              <figure class="gallery__item">
+                <div class="gallery__box gallery__box--home">
+                  <div class="gallery__caption">
+                    <img src="src/images/svg/home.svg" alt="galleryIcon" class="gallery__icon-location gallery__icon-location--home">
+                  </div>
+                </div>
+                <picture>
+                  <source srcset="src/images/hotel-2-small.jpg" media="(max-width: 37.5em)">
+                  <img src="src/images/hotel-2.jpg" alt="photo of hotel 2" class="gallery__photo">
+                </picture>
+              </figure>
+
+              <figure class="gallery__item">
+                <div class="gallery__box">
+                  <div class="gallery__caption">
+                    <span class="gallery__hotel">
+                      <img src="src/images/svg/hotel.svg" alt="galleryIcon" class="gallery__icon-location">Queens Hotel
+                    </span>
+                    <span class="gallery__location">
+                      <img src="src/images/svg/location-pin.svg" alt="galleryIcon" class="gallery__icon-location">Birmingham, Great Britain
+                    </span>
+                  </div>
+                </div>
+                <picture>
+                  <source srcset="src/images/hotel-3-small.jpg" media="(max-width: 37.5em)">
+                  <img src="src/images/hotel-3.jpg" alt="photo of hotel 2" class="gallery__photo">
+                </picture>
+              </figure>
+            </div>
+
+            <div class="overview" data-aos="zoom-in" data-aos-duration="100">
+              <h1 class="overview__heading" data-aos="fade-right" data-aos-duration="800" data-aos-delay="250">
+                Hotel Century
+              </h1>
+
+              <div class="overview__stars" data-aos="fade-right" data-aos-duration="800" >
+                <img src="src/images/svg/star.svg" alt="overviewIcon" class="overview__icon-star">
+                <img src="src/images/svg/star.svg" alt="overviewIcon" class="overview__icon-star">
+                <img src="src/images/svg/star.svg" alt="overviewIcon" class="overview__icon-star">
+                <img src="src/images/svg/star.svg" alt="overviewIcon" class="overview__icon-star">
+                <img src="src/images/svg/star.svg" alt="overviewIcon" class="overview__icon-star">
+              </div>
+
+              <div class="overview__location" data-aos="fade-left" data-aos-duration="800">
+                <img src="src/images/svg/location-pin.svg" alt="overviewIcon" class="overview__icon-location">
+                <button type="submit" class="btn-inline">Manchester, Great Britain</button>
+              </div>
+
+              <div class="overview__rating" data-aos="fade-left" data-aos-duration="800" data-aos-delay="250">
+                <div class="overview__rating-average">8.6 <img src="src/images/svg/star-rate.svg" alt="overviewIcon" class="overview__icon-average"></div>
+                <div class="overview__rating-count">460 votes</div>
+              </div>
+            </div>
+
+            <div class="detail">
+              <div class="description">
+                <p class="paragraph" data-aos="fade-right" data-aos-duration="800">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+                </p>
+                <p class="paragraph" data-aos="fade-left" data-aos-duration="800">
+                  Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
+                </p>
+                <ul class="list">
+                  <li class="list__item" data-aos="fade-right" data-aos-duration="800"><p>Close to the beach</p></li>
+                  <li class="list__item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100"><p>Breakfast included</p></li>
+                  <li class="list__item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200"><p>Free airport shuttle</p></li>
+                  <li class="list__item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300"><p>Free wifi in all rooms</p></li>
+                  <li class="list__item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400"><p>Air conditioner and heating</p></li>
+                  <li class="list__item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500"><p>Pets allowed</p></li>
+                  <li class="list__item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="600"><p>We speak all languages</p></li>
+                  <li class="list__item" data-aos="fade-left" data-aos-duration="800" data-aos-delay="700"><p>Perfect for families</p></li>
+                </ul>
+                <div class="recommend">
+                  <p class="recommend__count" data-aos="fade-up" data-aos-duration="800">
+                    Kate and 3 other friends recommend this hotel.
+                  </p>
+                  <div class="recommend__friends" data-aos="fade-up" data-aos-duration="800">
+                    <img src="src/images/user-3.jpg" alt="friend-1" class="recommend__photo">
+                    <img src="src/images/user-4.jpg" alt="friend-1" class="recommend__photo">
+                    <img src="src/images/user-5.jpg" alt="friend-1" class="recommend__photo">
+                    <img src="src/images/user-2.jpg" alt="friend-1" class="recommend__photo">
+                  </div>
+                </div>
+              </div>
+              <div class="user-reviews">
+                <figure class="review" data-aos="fade-up" data-aos-duration="800">
+                  <blockquote class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+                  </blockquote>
+                  <figcaption class="review__user">
+                    <img src="src/images/user-1.jpg" alt="user1" class="review__photo">
+                    <div class="review__user-box">
+                      <p class="review__user-name">John Dave</p>
+                      <p class="review__user-date">Jun 21th, 2020</p>
+                    </div>
+                    <div class="review__rating">8.4</div>
+                  </figcaption>
+                </figure>
+
+                <figure class="review" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                  <blockquote class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+                  </blockquote>
+                  <figcaption class="review__user">
+                    <img src="src/images/user-6.jpg" alt="user2" class="review__photo">
+                    <div class="review__user-box">
+                      <p class="review__user-name">Rose Bukatte</p>
+                      <p class="review__user-date">Aug 13rd, 2020</p>
+                    </div>
+                    <div class="review__rating">8.8</div>
+                  </figcaption>
+                </figure>
+                <a href="#" class="btn-inline__link" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Show all <span>&rarr;</span></a>
+              </div>
+
+              <div class="cta">
+                <h2 class="cta__book-now" data-aos="fade-up data-aos-duration="800">
+                  Good News! We have 4 free rooms for your selected dates!
+                </h2>
+                <a href="#" class="btn" data-aos="fade-up" data-aos-duration="800">
+                  <span class="btn__visible">Book now!</span>
+                  <span class="btn__invisible">Only 4 rooms left!</span>
+                </a>
+              </div>
+            </div>
+            </main>
+          </div>
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="index.js" charset="utf-8"></script>
+    </body>
+</html>

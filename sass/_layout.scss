@@ -1,0 +1,132 @@
+.container {
+  box-shadow: var(--shadow-dark);
+}
+
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-grey-light-3);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @media only screen and (max-width: $bp-smallest) {
+    flex-wrap: wrap;
+    height: 6rem;
+    background-color: var(--color-grey-light-1);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    margin-top: 5rem;
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+
+  @media only screen and (max-width: $bp-medium) {
+    position: relative;
+  }
+}
+
+.hotel-view {
+  display: inline-block;
+  background-color: #fff;
+  flex: 1;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: -2rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  &::after {
+    @media only screen and (max-width: $bp-small) {
+      content: '© 2020 by Trillo. All rights reserved.';
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 2rem;
+      position: absolute;
+      bottom: 0;
+      transform: translateY(100%);
+      text-align: center;
+      color: rgba(255, 255, 255, .5);
+      background-color: var(--color-grey-dark-1);
+
+    }
+  }
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 4.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+}
+
+.description,
+.user-reviews {
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 3rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 3rem;
+  }
+}
+
+.description {
+  flex: 0 0 60%;
+  box-shadow: -4px -4px 4px #fff, 1rem .6rem 1.6rem rgba(0, 0, 0, .03);
+  margin-right: 4.5rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin-right: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+}
+
+.user-reviews {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
